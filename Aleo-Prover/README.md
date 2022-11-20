@@ -6,7 +6,7 @@
 
 ## **Hardware Specifications**
 
-| Component  | Reommendation |
+| Component  | Recommendation |
 | ------------- | ------------- |
 | CPU  | 16 CPU **(32 CPU preferred)**  |
 | Memory  | 16gb RAM **(32gb RAM preferred)** |
