@@ -141,7 +141,7 @@ sudo chainflip-node key generate-node-key --file /etc/chainflip/keys/node_key_fi
 ```
 cat /etc/chainflip/keys/node_key_file
 ```
-> **PLEASE SAVE ALL OF THE OUTPUT IN THE SAFE PLACE**
+> **SAVE ALL OF THE DETAILS IN SAFE PLACE**
 
 ## **14. MAKE THE PRIVATE KEYS ARE NOT AVAILABLE IN YOUR SHELL HISTORY**
 
