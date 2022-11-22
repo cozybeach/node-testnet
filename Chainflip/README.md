@@ -13,7 +13,7 @@
 
 # **HOW TO RUN CHAINFLIP PERSEVERANCE VALIDATOR TESTNET**
 
-## **1. OPEN ALL TCP PORT**
+## **1. OPEN ```30333``` & ```8078``` TCP PORT**
 
 ```
 sudo ufw enable
@@ -255,4 +255,4 @@ sudo chmod 644 /etc/logrotate.d/chainflip
 sudo chown root.root /etc/logrotate.d/chainflip
 ```
 
-## **22.
+## **22. 
