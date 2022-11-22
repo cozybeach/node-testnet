@@ -184,3 +184,75 @@ private_key_file = "/etc/chainflip/keys/ethereum_key_file"
 db_file = "/etc/chainflip/data.db"
 ```
 
+## **17. START NODE**
+
+```
+sudo systemctl start chainflip-node
+```
+
+> **CHECK NODE STATUS**
+
+```
+sudo systemctl status chainflip-node
+```
+
+> **CHECK NODE LOGS**
+
+```
+tail -f /var/log/chainflip-node.log
+```
+
+## **18. START ENGINE**
+
+```
+sudo systemctl start chainflip-engine
+```
+
+> **CHECK ENGINE STATUS**
+
+```
+sudo systemctl status chainflip-engine
+```
+
+> **CHECK ENGINE LOGS**
+
+```
+tail -f /var/log/chainflip-engine.log
+```
+
+## **19. TELL BOTH SERVICE TO START AGAIN**
+
+```
+sudo systemctl enable chainflip-engine
+sudo systemctl enable chainflip-node
+```
+
+## **20. MAKE THE CONFIG FILE FOR ```logrotate```
+
+```
+sudo nano /etc/logrotate.d/chainflip
+```
+
+> **ADD THE CONFIGURATION FILE**
+
+```
+/var/log/chainflip-*.log {
+  rotate 7
+  daily
+  dateext
+  dateformat -%Y-%m-%d
+  missingok
+  notifempty
+  copytruncate
+  nocompress
+}
+```
+
+## **21. GIVE THE ROOT USER OWNERSHIP OF THE FILE**
+
+```
+sudo chmod 644 /etc/logrotate.d/chainflip
+sudo chown root.root /etc/logrotate.d/chainflip
+```
+
+## **22.
