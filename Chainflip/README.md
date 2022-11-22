@@ -1,1 +1,186 @@
+#CHAINFLIP PERSEVERANCE VALIDATOR TESTNET
+
+[Chainflip](https://pbs.twimg.com/profile_banners/1084668943405436928/1644423029/1500x500)
+
+##**HARDWARE SPECIFICATIONS**
+|COMPONENT|RECOMMENDATION|
+| ------------- | ------------- |
+|OS|Ubuntu 20.04|
+|CPU|4 CPU|
+|RAM|8gb MEMORY|
+|STORAGE|200gb SSD|
+|BANDWIDTH|1GBps connection, 100 GB bandwidth combined up/down per month|
+
+#**HOW TO RUN CHAINFLIP PERSEVERANCE VALIDATOR TESTNET**
+
+## **1. OPEN ALL TCP PORT**
+
+```
+sudo ufw enable
+sudo ufw allow 8078
+sudo ufw allow 30333
+```
+
+## **2. CREATE _FLIP_ USER**
+
+```
+sudo useradd -s /bin/bash -d /home/flip/ -m -G sudo flip
+```
+
+## **3. ADD PASSWORD**
+
+```
+sudo passwd flip
+```
+
+## **4. SETUP SSH ACCESS**
+
+```
+mkdir /home/flip/.ssh
+sudo cp /root/.ssh/authorized_keys /home/flip/.ssh/authorized_keys
+sudo chown -R flip:flip /home/flip/.ssh/
+sudo chmod 0700 /home/flip/.ssh/
+```
+
+Next time you can use this command instead for faster login
+
+```
+ssh flip@<YOUR_SERVER_PUBLIC_IP>
+```
+
+## **5. ADD CHAINFLIP APT REPO**
+
+```
+sudo mkdir -p /etc/apt/keyrings
+curl -fsSL repo.chainflip.io/keys/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/chainflip.gpg
+```
+
+## **6. VERIFY KEY'S AUTHENTICITY**
+
+```
+gpg --show-keys /etc/apt/keyrings/chainflip.gpg
+```
+
+> THE OUTPUT SHOULD BE LIKE THIS : 
+
+```
+pub   rsa3072 2022-11-08 [SC] [expires: 2024-11-07]
+      BDBC3CF58F623694CD9E3F5CFB3E88547C6B47C6
+uid                      Chainflip Labs GmbH <dev@chainflip.io>
+sub   rsa3072 2022-11-08 [E] [expires: 2024-11-07]
+```
+
+## **7. ADD CHAINFLIP REPO TO ```apt``` source file**
+
+```
+echo "deb [signed-by=/etc/apt/keyrings/chainflip.gpg] https://repo.chainflip.io/perseverance/ focal main" | sudo tee /etc/apt/sources.list.d/chainflip.list
+```
+
+## **8. INSTALL THE PACKAGE**
+
+```
+sudo apt-get update
+sudo apt-get install -y chainflip-cli chainflip-node chainflip-engine
+```
+
+## **9. ADD DIRECTORY FOR THE KEYS**
+
+```
+sudo mkdir /etc/chainflip/keys
+```
+
+## **10. ADD YOUR METAMASK PRIVATE KEY**
+
+```
+echo -n "YOUR_WALLET_PRIVATE_KEY" |  sudo tee /etc/chainflip/keys/ethereum_key_file
+```
+
+**MAKE SURE YOU HAVE 0.1 gETH atleast**
+
+## **11. GENERATING SIGNING KEYS**
+
+```
+chainflip-node key generate
+```
+
+> **THE OUTPUT SHOULD BE LIKE THIS :**
+
+```
+Secret phrase:       XXX
+  Network ID:        2112
+  Secret seed:       0xXXX  # This is your private key. Hold onto it.
+  Public key (hex):  0xXXX
+  Account ID:        0xXXX 
+  Public key (SS58): cFXXX # This is your Validator ID. Make sure you have it handy for staking.
+  SS58 Address:      cFXXX
+```
+
+> **SAVE ALL OF THE DETAILS IN SAFE PLACE**
+
+## **12. LOADING YOUR SIGNING KEYS**
+
+```YOUR_CHAINFLIP_SECRET_SEED``` = ```Secret seed``` **_FROM THE OUTPUT ABOVE_**
+
+```
+SECRET_SEED=YOUR_CHAINFLIP_SECRET_SEED
+```
+
+**THEN**
+
+```
+echo -n "${SECRET_SEED:2}" | sudo tee /etc/chainflip/keys/signing_key_file
+```
+
+## **13. GENERATING NODE KEYS**
+
+```
+sudo chainflip-node key generate-node-key --file /etc/chainflip/keys/node_key_file
+```
+**CHECK IF IT WORK**
+
+```
+cat /etc/chainflip/keys/node_key_file
+```
+> **PLEASE SAVE ALL OF THE OUTPUT IN THE SAFE PLACE**
+
+## **14. MAKE THE PRIVATE KEYS ARE NOT AVAILABLE IN YOUR SHELL HISTORY**
+
+```
+sudo chmod 600 /etc/chainflip/keys/ethereum_key_file
+sudo chmod 600 /etc/chainflip/keys/signing_key_file
+sudo chmod 600 /etc/chainflip/keys/node_key_file
+history -c
+```
+
+## **15. CREATE ENGINE CONFIG FILE**
+
+```
+sudo mkdir -p /etc/chainflip/config
+sudo nano /etc/chainflip/config/Default.toml
+```
+
+## **16. CONNECT THE gETH ALCHEIMY ENDPOINT TO YOUR ENGINE CONFIG**
+
+```
+# Default configurations for the CFE
+[node_p2p]
+node_key_file = "/etc/chainflip/keys/node_key_file"
+ip_address="IP_ADDRESS_OF_YOUR_NODE"
+port = "8078"
+
+[state_chain]
+ws_endpoint = "ws://127.0.0.1:9944"
+signing_key_file = "/etc/chainflip/keys/signing_key_file"
+
+[eth]
+# Ethereum RPC endpoints (websocket and http for redundancy).
+ws_node_endpoint = "WSS_ENDPOINT_FROM_ETHEREUM_CLIENT"
+http_node_endpoint = "HTTPS_ENDPOINT_FROM_ETHEREUM_CLIENT"
+
+# Ethereum private key file path. This file should contain a hex-encoded private key.
+private_key_file = "/etc/chainflip/keys/ethereum_key_file"
+
+[signing]
+db_file = "/etc/chainflip/data.db"
+```
 
