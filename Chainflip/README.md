@@ -14,22 +14,22 @@
 # **HOW TO RUN CHAINFLIP PERSEVERANCE VALIDATOR TESTNET**
 
 ## **GET YOUR ``tFLIP`` & ``GEth`` FROM FAUCET**
-      Tflip
-      1. Join [Chainflip discord server](https://discord.gg/5BgkpQs5j5)
-      2. Navigate to [🚰|faucet](https://discord.com/channels/824147014140952596/1025410182987137145)
-      3. Request faucet ``!drip YOUR_WALLET_ADDRESS`` Or you can get ``tFLIP`` by swapping GEth in [tFLIP Marketplace](https://tflip-dex.thunderhead.world/)
+1. Tflip    
+      - Join [Chainflip discord server](https://discord.gg/5BgkpQs5j5)
+      - Navigate to [🚰|faucet](https://discord.com/channels/824147014140952596/1025410182987137145)
+      - Request faucet ``!drip YOUR_WALLET_ADDRESS`` Or you can get ``tFLIP`` by swapping GEth in [tFLIP Marketplace](https://tflip-dex.thunderhead.world/)
       
-      GEth
-      1. Navigate to [Goerli Faucet](https://goerlifaucet.com/)
-      2. Drop your address and request faucet
+2. GEth
+      - Navigate to [Goerli Faucet](https://goerlifaucet.com/)
+      - Drop your address and request faucet
 
 ## **CREATE ALCHEIMY ETHEREUM CLIENT**
-      - Sign up ALcheimy free account [here](https://auth.alchemy.com/signup)
-      - Finish the sign up requirement
-      - Go to dashboard and hit the **CREATE APP** button
-      - Write down the name and description
-      - Select Ethereum Chain with Goerli Network and then**HTTPS** & **WEBSOCKETS** hit the **CREATE APP**
-      - Hit the **VIEW KEY** button and copy **HTTPS** & **WEBSOCKETS**
+- Sign up ALcheimy free account [here](https://auth.alchemy.com/signup)
+- Finish the sign up requirement
+- Go to dashboard and hit the **CREATE APP** button
+- Write down the name and description
+- Select Ethereum Chain with Goerli Network and then**HTTPS** & **WEBSOCKETS** hit the **CREATE APP**
+- Hit the **VIEW KEY** button and copy **HTTPS** & **WEBSOCKETS**
       
 ## **1. OPEN ```30333``` & ```8078``` TCP PORT**
 
