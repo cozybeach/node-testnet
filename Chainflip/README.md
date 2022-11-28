@@ -13,7 +13,7 @@
 
 # **HOW TO RUN CHAINFLIP PERSEVERANCE VALIDATOR TESTNET**
 
-## **GET YOUR ``tFLIP`` & ``GEth`` FROM FAUCET
+## **GET YOUR ``tFLIP`` & ``GEth`` FROM FAUCET**
       Tflip
       1. Join [Chainflip discord server](https://discord.gg/5BgkpQs5j5)
       2. Navigate to [🚰|faucet](https://discord.com/channels/824147014140952596/1025410182987137145)
