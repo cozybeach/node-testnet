@@ -205,6 +205,7 @@ db_file = "/etc/chainflip/data.db"
 ```
 
 **CHANGE THE FOLLOWING VARIABELS**
+
 |VARIABEL|DEESCRIPTIONS|
 |IP_ADDRESS_OF_YOUR_NODE|Your Machine/VPS/VDS/DEDICATED IP Address|
 |WSS_ENDPOINT_FROM_ETHEREUM_CLIENT|Your Websockets/WSS from Alcheimy|
