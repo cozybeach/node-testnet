@@ -14,12 +14,12 @@
 # **HOW TO RUN CHAINFLIP PERSEVERANCE VALIDATOR TESTNET**
 
 ## **GET YOUR ``tFLIP`` & ``GEth`` FROM FAUCET
-      ``Tflip``
+      Tflip
       1. Join [Chainflip discord server](https://discord.gg/5BgkpQs5j5)
       2. Navigate to [🚰|faucet](https://discord.com/channels/824147014140952596/1025410182987137145)
       3. Request faucet ``!drip YOUR_WALLET_ADDRESS`` Or you can get ``tFLIP`` by swapping GEth in [tFLIP Marketplace](https://tflip-dex.thunderhead.world/)
       
-      ``GEth``
+      GEth
       1. Navigate to [Goerli Faucet](https://goerlifaucet.com/)
       2. Drop your address and request faucet
 
