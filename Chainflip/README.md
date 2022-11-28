@@ -151,6 +151,8 @@ SECRET_SEED=YOUR_CHAINFLIP_SECRET_SEED
 echo -n "${SECRET_SEED:2}" | sudo tee /etc/chainflip/keys/signing_key_file
 ```
 
+> **SAVE ALL OF THE DETAILS IN SAFE PLACE**
+
 ## **13. GENERATING NODE KEYS**
 
 ```
