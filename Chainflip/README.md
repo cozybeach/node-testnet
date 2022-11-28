@@ -24,8 +24,9 @@
       - Drop your address and request faucet
 
 ## **CREATE ALCHEIMY ETHEREUM CLIENT**
-- Sign up ALcheimy free account [here](https://auth.alchemy.com/signup)
+- Sign up Alcheimy free account [here](https://auth.alchemy.com/signup)
 - Finish the sign up requirement
+- It'll give you 300M of CU for free
 - Go to dashboard and hit the **CREATE APP** button
 - Write down the name and description
 - Select Ethereum Chain with Goerli Network and then**HTTPS** & **WEBSOCKETS** hit the **CREATE APP**
