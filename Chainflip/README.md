@@ -9,7 +9,7 @@
 |CPU|4 CPU|
 |RAM|8gb MEMORY|
 |STORAGE|200gb SSD|
-|OS|UBUNTU 20.04|
+|OS|Ubuntu 20.04|
 |BANDWIDTH|1GBps connection, 100 GB bandwidth combined up/down per month|
 
 # **HOW TO RUN CHAINFLIP PERSEVERANCE VALIDATOR TESTNET**
