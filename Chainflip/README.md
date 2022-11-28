@@ -13,6 +13,24 @@
 
 # **HOW TO RUN CHAINFLIP PERSEVERANCE VALIDATOR TESTNET**
 
+## **GET YOUR ``tFLIP`` & ``GEth`` FROM FAUCET
+      ``Tflip``
+      1. Join [Chainflip discord server](https://discord.gg/5BgkpQs5j5)
+      2. Navigate to [🚰|faucet](https://discord.com/channels/824147014140952596/1025410182987137145)
+      3. Request faucet ``!drip YOUR_WALLET_ADDRESS`` Or you can get ``tFLIP`` by swapping GEth in [tFLIP Marketplace](https://tflip-dex.thunderhead.world/)
+      
+      ``GEth``
+      1. Navigate to [Goerli Faucet](https://goerlifaucet.com/)
+      2. Drop your address and request faucet
+
+## **CREATE ALCHEIMY ETHEREUM CLIENT**
+      - Sign up ALcheimy free account [here](https://auth.alchemy.com/signup)
+      - Finish the sign up requirement
+      - Go to dashboard and hit the **CREATE APP** button
+      - Write down the name and description
+      - Select Ethereum Chain with Goerli Network and then**HTTPS** & **WEBSOCKETS** hit the **CREATE APP**
+      - Hit the **VIEW KEY** button and copy **HTTPS** & **WEBSOCKETS**
+      
 ## **1. OPEN ```30333``` & ```8078``` TCP PORT**
 
 ```
@@ -184,6 +202,12 @@ private_key_file = "/etc/chainflip/keys/ethereum_key_file"
 db_file = "/etc/chainflip/data.db"
 ```
 
+**CHANGE THE FOLLOWING VARIABELS**
+|VARIABEL|DEESCRIPTIONS|
+|IP_ADDRESS_OF_YOUR_NODE|Your Machine/VPS/VDS/DEDICATED IP Address|
+|WSS_ENDPOINT_FROM_ETHEREUM_CLIENT|Your Websockets/WSS from Alcheimy|
+|HTTPS_ENDPOINT_FROM_ETHEREUM_CLIENT|Your HTTPS from Alcheimy|
+
 ## **17. START NODE**
 
 ```
@@ -255,4 +279,14 @@ sudo chmod 644 /etc/logrotate.d/chainflip
 sudo chown root.root /etc/logrotate.d/chainflip
 ```
 
-## **22. 
+## **22. STAKE YOUR ``tFlip``
+
+1. Go to https://stake-perseverance.chainflip.io/ and navigate to **My Node**
+2. Click the **+Add Node** and you should see **Register New Node*
+3. Enter your **Validator ID/Public Key(SS58)** and how much amount did you want to stake
+4. Metamask will ask you to sign two transactions. **The first one** is a token approval and **the second one** transfers and stakes your tFLIP
+
+##PS
+
+1. The testnet isn't incentivize
+2. To become an active validator, you need to stake the same amount as the Min Bid value
