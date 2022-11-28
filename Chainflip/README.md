@@ -285,12 +285,12 @@ sudo chown root.root /etc/logrotate.d/chainflip
 
 ## **22. STAKE YOUR ``tFlip``
 
-1. Go to https://stake-perseverance.chainflip.io/ and navigate to **My Node**
-2. Click the **+Add Node** and you should see **Register New Node*
-3. Enter your **Validator ID/Public Key(SS58)** and how much amount did you want to stake
-4. Metamask will ask you to sign two transactions. **The first one** is a token approval and **the second one** transfers and stakes your tFLIP
+- Go to https://stake-perseverance.chainflip.io/ and navigate to **My Node**
+- Click the **+Add Node** and you should see **Register New Node*
+- Enter your **Validator ID/Public Key(SS58)** and how much amount did you want to stake
+- Metamask will ask you to sign two transactions. **The first one** is a token approval and **the second one** transfers and stakes your tFLIP
 
 ##PS
 
-1. The testnet isn't incentivize
-2. To become an active validator, you need to stake the same amount as the Min Bid value
+- The testnet isn't incentivize
+- To become an active validator, you need to stake the same amount as the Min Bid value
