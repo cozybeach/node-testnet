@@ -9,10 +9,11 @@
 | Component  | Recommendation |
 | ------------- | ------------- |
 | CPU  | 16 CPU **(32 CPU preferred)**  |
-| Memory  | 16gb RAM **(32gb RAM preferred)** |
-| Storage  | 128gb disk space |
-| Network | 10 Mbps of upload and download bandwidth |
-| Type | **Dedicated Server** |
+| MEMORY  | 16gb RAM **(32gb RAM preferred)** |
+| STORAGE  | 128gb SSD Storage |
+| NETWORK | 10 Mbps of upload and download bandwidth |
+| TYPE | **Dedicated Server** |
+| OS | Ubuntu 20.04.5 LTS |
 
 # **HOW TO RUN ALEO CLIENT & PROVER NODE**
 
