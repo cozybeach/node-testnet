@@ -1,4 +1,4 @@
-# **BITCANNA VALIDATOR & SENTRY NODE**
+# **BITCANNA VALIDATOR NODE**
 
 <p align="center">
   <img width="750" height="250" src="https://pbs.twimg.com/profile_banners/958710285430177793/1651667138/1500x500">
@@ -14,7 +14,16 @@
 | Network | 100 Mbps of upload and download bandwidth |
 | Type | VPS (**VDS preferred**) |
 
-# **HOW TO RUN BITCANNA VALIDATOR & SENTRY NODE**
+
+
+# **HOW TO RUN BITCANNA VALIDATOR NODE**
+
+# **. UPGRADE SYSTEM PACKAGES**
+
+```
+sudo apt update
+sudo apt upgrade -y
+```
 
 ## **1. INSTALL SOFTWARE**
 
