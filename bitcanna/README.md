@@ -1,4 +1,6 @@
+<p align="center">
 # **BITCANNA VALIDATOR & SENTRY NODE**
+</p>
 
 <p align="center">
   <img width="750" height="250" src="https://pbs.twimg.com/profile_banners/958710285430177793/1651667138/1500x500">
