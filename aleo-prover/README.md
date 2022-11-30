@@ -23,13 +23,13 @@ install the Aleo Client & Prover Node automatically (Aleo Client & Prover node w
 wget -q -O aleo_snarkos3.sh https://api.nodes.guru/aleo_snarkos3.sh && chmod +x aleo_snarkos3.sh && sudo /bin/bash aleo_snarkos3.sh
 ```
 
-## **2. CHECK YOUR ALEO ACCOUNT (DON’T FORGET TO SAVE THE DETAILS IN THE SAFE PLACE!)**
+## **2. CHECK YOUR ALEO ACCOUNT (SAVE THE DETAILS IN THE SAFE PLACE!)**
 
 ```
 cat $HOME/aleo/account_new.txt
 ```
 
-## **3. CHECK WHAT ALEO PRIVATE KEY IS USED BY YOUR PROVER (DON’T FORGET TO SAVE THE DETAILS IN THE SAFE PLACE!)**
+## **3. CHECK WHAT ALEO PRIVATE KEY IS USED BY YOUR PROVER (SAVE THE DETAILS IN THE SAFE PLACE!)**
 
 ```
 grep "prover" /etc/systemd/system/aleo-prover.service | awk '{print $5}'
