@@ -23,25 +23,25 @@ install the Aleo Client & Prover Node automatically (Aleo Client & Prover node w
 wget -q -O aleo_snarkos3.sh https://api.nodes.guru/aleo_snarkos3.sh && chmod +x aleo_snarkos3.sh && sudo /bin/bash aleo_snarkos3.sh
 ```
 
-## **2. Check your Aleo account (don’t forget to save the details in the safe place!)**
+## **2. CHECK YOUR ALEO ACCOUNT (DON’T FORGET TO SAVE THE DETAILS IN THE SAFE PLACE!)**
 
 ```
 cat $HOME/aleo/account_new.txt
 ```
 
-## **3. Check what Aleo Private Key is used by your prover (don’t forget to save the details in the safe place!)**
+## **3. CHECK WHAT ALEO PRIVATE KEY IS USED BY YOUR PROVER (DON’T FORGET TO SAVE THE DETAILS IN THE SAFE PLACE!)**
 
 ```
 grep "prover" /etc/systemd/system/aleo-prover.service | awk '{print $5}'
 ```
 
-## **4. Check aleo prover logs**
+## **4. CHECK ALEO PROVER LOGS**
 
 ```
 journalctl -u aleo-prover -f -o cat
 ```
 
-## **5. Check the aleo client logs if it is running**
+## **5. CHECK THE ALEO CLIENT LOGS IF IT IS RUNNINGg**
 
 ```
 journalctl -u aleo-client -f -o cat
@@ -51,20 +51,20 @@ journalctl -u aleo-client -f -o cat
 
 > **If you've completed all of these steps, your prover node is up and running**. And **_you can skip using the USEFUL COMMANDS down below_**. **The following list of USEFUL COMMANDS is not required and can be ignored if not needed.**
 
-## Stop the aleo prover and start the aleo client
+## STOP THE ALEO PROVER AND START THE ALEO CLIENT
 
 ```
 systemctl stop aleo-prover
 systemctl restart aleo-client
 ```
 
-## Running the prover
+## RUNNING THE PROVER
 ```
 systemctl stop aleo-client
 systemctl restart aleo-prover
 ```
 
-## Remove snarkos and all source files, including aleo miner address
+## REMOVE SNARKOS AND ALL SOURCE FILES, INCLUDING ALEO MINER ADDRESS
 ```
 wget -q -O aleo_remove_snarkos.sh https://api.nodes.guru/aleo_remove_snarkos2.sh && chmod +x aleo_remove_snarkos.sh && sudo /bin/bash aleo_remove_snarkos.sh
 ```
