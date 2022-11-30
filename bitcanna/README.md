@@ -1,4 +1,4 @@
-#**BITCANNA VALIDATOR & SENTRY NODE**
+# **BITCANNA VALIDATOR & SENTRY NODE**
 
 ## **Hardware Specifications**
 
