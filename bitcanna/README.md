@@ -8,7 +8,7 @@
 | Memory  | 8gb RAM |
 | Storage  | 200gb disk space |
 | Network | 100 Mbps of upload and download bandwidth |
-| Type | VPS **VDS preferred** |
+| Type | VPS (**VDS preferred**) |
 
 # **HOW TO RUN BITCANNA VALIDATOR & SENTRY NODE**
 
