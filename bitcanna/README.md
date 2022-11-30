@@ -1,5 +1,9 @@
 # **BITCANNA VALIDATOR & SENTRY NODE**
 
+<p align="center">
+  <img width="460" height="300" src="https://pbs.twimg.com/profile_banners/958710285430177793/1651667138/1500x500">
+</p>
+
 ## **Hardware Specifications**
 
 | Component  | Recommendation |
