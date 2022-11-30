@@ -12,13 +12,13 @@
 
 # **HOW TO RUN BITCANNA VALIDATOR & SENTRY NODE**
 
-## **INSTALL SOFTWARE**
+## **1. INSTALL SOFTWARE**
 
 ```
 sudo apt-get install build-essential jq
 ```
 
-## **INSTALL GOLANG 1.15.X**
+## **2. INSTALL GOLANG 1.15.X**
 
 Remove any old GoLang installation
 
@@ -51,7 +51,7 @@ To check if GoLang already installed
 go version
 ```
 
-## **COMPILE BCAND SOURCE CODE**
+## **3. COMPILE BCAND SOURCE CODE**
 
 Download Source Code and Compile
 
@@ -70,7 +70,7 @@ build/bcnad version
 
 > The outpus should be ```0.testnet7```
 
-## **INSTALL COSMOSVISOR**
+## **4. INSTALL COSMOSVISOR**
 
 ```
 go get github.com/cosmos/cosmos-sdk/cosmovisor/cmd/cosmovisor
