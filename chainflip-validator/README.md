@@ -25,13 +25,13 @@
       - Drop your address and request faucet
 
 ## **CREATE ALCHEIMY ETHEREUM CLIENT**
-- Sign up Alcheimy free account [here](https://auth.alchemy.com/signup)
-- Finish the sign up requirement
-- It'll give you 300M of CU for free
-- Go to dashboard and hit the **CREATE APP** button
-- Write down the name and description
-- Select Ethereum Chain with Goerli Network and hit the **CREATE APP** button
-- Hit the **VIEW KEY** button and copy **HTTPS** & **WEBSOCKETS**
+- Create a free Alcheimy account [here](https://auth.alchemy.com/signup)
+- Fullfill the registration procedure
+- A free 300,000,000 CU is included with the Free Account
+- Start by going to the dashboard and clicking ```+ CREATE APP```
+- Write down the APP name and description as you wish
+- Chose Ethereum Chain and the Goerli Network, then click ```CREATE APP```.
+- After the application has been created successfully, select the VIEW KEY option and copy the HTTPS and WEBSOCKETS credentials
       
 ## **1. OPEN ```30333``` & ```8078``` TCP PORT**
 
