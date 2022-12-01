@@ -1,7 +1,7 @@
 # **NIBIRU CHAIN FULL NODE**
 
 <p align="center">
-  <img width="460" height="300" src="https://pbs.twimg.com/profile_banners/1516130689028087815/1667256106/1500x500">
+  <img width="920" height="600" src="https://pbs.twimg.com/profile_banners/1516130689028087815/1667256106/1500x500">
 </p>
 
 ## **HARDWARE SPECIFICATIONS**
