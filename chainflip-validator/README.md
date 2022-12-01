@@ -30,7 +30,7 @@
 - It'll give you 300M of CU for free
 - Go to dashboard and hit the **CREATE APP** button
 - Write down the name and description
-- Select Ethereum Chain with Goerli Network and then**HTTPS** & **WEBSOCKETS** hit the **CREATE APP**
+- Select Ethereum Chain with Goerli Network and hit the **CREATE APP** button
 - Hit the **VIEW KEY** button and copy **HTTPS** & **WEBSOCKETS**
       
 ## **1. OPEN ```30333``` & ```8078``` TCP PORT**
